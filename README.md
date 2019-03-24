@@ -8,8 +8,11 @@ Código para transcrever automaticamente clipes de áudio grandes em pt-br.
 	1.1 Marcar a caixa da primeira tela do instalador de "Adicionar ao PATH" (ou algo assim)
 
 2. Abrir o prompt do PowerShell ou cmd
+
 	2.1 Digitar: pip install pydub
+	
 	2.2 Digitar: pip install ffpmeg-python
+	
 	2.3 Digitar: pip install SpeechRecognition
 
 -------------
