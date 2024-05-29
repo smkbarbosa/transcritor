@@ -23,6 +23,12 @@ Código para transcrever automaticamente clipes de áudio grandes em pt-br.
 
 	(Shift + botão direito na pasta em que estão os arquivos de áudio e os códigos)
 
+2. Converter audio mp3 para wav
+
+```
+ffmpeg -i <audio>.mp3 -acodec pcm_s16le -ac 1 -ar 16000 audio.wav
+```
+
 2. Digitar:
 
 	python transcritor.py nome_do_arquivo.wav nome_do_arquivo2.wav
