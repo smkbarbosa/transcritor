@@ -23,13 +23,13 @@ Código para transcrever automaticamente clipes de áudio grandes em pt-br.
 
 2. Converter audio mp3 para wav
 
-```
-ffmpeg -i <audio>.mp3 -acodec pcm_s16le -ac 1 -ar 16000 audio.wav
-```
+
+	ffmpeg -i <audio>.mp3 -acodec pcm_s16le -ac 1 -ar 16000 audio.wav
+
 
 3. Digitar:
 
-	```python transcritor.py nome_do_arquivo.wav nome_do_arquivo2.wav```
+	python transcritor.py nome_do_arquivo.wav nome_do_arquivo2.wav
 
 
 	- OBSERVAÇÕES:
@@ -40,7 +40,7 @@ ffmpeg -i <audio>.mp3 -acodec pcm_s16le -ac 1 -ar 16000 audio.wav
 	se quiser alterar, executar o comando com o parâmetro "--duration=xx segundos".
 	No exemplo abaixo, os áudios serão particionados em 40 segundos cada.
 
-		```python transcritor.py nome_do_arquivo.wav --duration=40```
+		python transcritor.py nome_do_arquivo.wav --duration=40
 
 4. Aguardar. Os áudios serão particionados e transcritos automaticamente. 
 Esses arquivos se encontrarão na pasta de nome igual ao arquivo de áudio principal.
