@@ -9,11 +9,9 @@ Código para transcrever automaticamente clipes de áudio grandes em pt-br.
 
 2. Abrir o prompt do PowerShell ou cmd
 
-	2.1 Digitar: pip install pydub
+	2.1 pip install -r requirements.txt
 	
-	2.2 Digitar: pip install ffpmeg-python
-	
-	2.3 Digitar: pip install SpeechRecognition
+	2.2 sudo apt install ffmpeg
 
 -------------
 
@@ -29,20 +27,20 @@ Código para transcrever automaticamente clipes de áudio grandes em pt-br.
 ffmpeg -i <audio>.mp3 -acodec pcm_s16le -ac 1 -ar 16000 audio.wav
 ```
 
-2. Digitar:
+3. Digitar:
 
-	python transcritor.py nome_do_arquivo.wav nome_do_arquivo2.wav
+	```python transcritor.py nome_do_arquivo.wav nome_do_arquivo2.wav```
 
 
 	- OBSERVAÇÕES:
 	
-	2.1 Pode botar quantos arquivos quiser para transcrever, mas sugiro não botar muitos se não demora muito tempo.
+	3.1 Pode botar quantos arquivos quiser para transcrever, mas sugiro não botar muitos se não demora muito tempo.
 	
-	2.2 O tempo de duração padrão para cada arquivo gerado é de 30 segundos, 
+	3.2 O tempo de duração padrão para cada arquivo gerado é de 30 segundos, 
 	se quiser alterar, executar o comando com o parâmetro "--duration=xx segundos".
 	No exemplo abaixo, os áudios serão particionados em 40 segundos cada.
 
-		python transcritor.py nome_do_arquivo.wav --duration=40
+		```python transcritor.py nome_do_arquivo.wav --duration=40```
 
-3. Aguardar. Os áudios serão particionados e transcritos automaticamente. 
+4. Aguardar. Os áudios serão particionados e transcritos automaticamente. 
 Esses arquivos se encontrarão na pasta de nome igual ao arquivo de áudio principal.
